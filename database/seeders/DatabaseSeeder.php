@@ -16,24 +16,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //\App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
 
-        User::create ([
-            'name' => 'Azikra Salma Sabilla',
-            'email' => 'azikrasalma352@gmail.com',
-            'password' => bcrypt('12345')
-        ]);
+        // User::create ([
+        //     'name' => 'Azikra Salma Sabilla',
+        //     'email' => 'azikrasalma352@gmail.com',
+        //     'password' => bcrypt('12345')
+        // ]);
 
-        User::create ([
-            'name' => 'Sulis Rosliani',
-            'email' => 'asulis352@gmail.com',
-            'password' => bcrypt('12345')
-        ]);
+        // User::create ([
+        //     'name' => 'Sulis Rosliani',
+        //     'email' => 'asulis352@gmail.com',
+        //     'password' => bcrypt('12345')
+        // ]);
+
+        User::factory(3)->create();
 
         Category::create ([
             'name' => 'Web Programming',
@@ -45,40 +46,43 @@ class DatabaseSeeder extends Seeder
             'slug' => 'personal',
         ]);
 
-        Post::create ([
-            'title' => 'Judul Pertama',
-            'slug' => 'judul-pertama',
-            'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
+        Post::factory(20)->create();
 
-        Post::create ([
-            'title' => 'Judul Kedua',
-            'slug' => 'judul-ke-dua',
-            'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
 
-        Post::create ([
-            'title' => 'Judul Ketiga',
-            'slug' => 'judul-ke-tiga',
-            'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
-            'category_id' => 2,
-            'user_id' => 1
-        ]);
+        // Post::create ([
+        //     'title' => 'Judul Pertama',
+        //     'slug' => 'judul-pertama',
+        //     'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
+        //     'category_id' => 1,
+        //     'user_id' => 1
+        // ]);
 
-        Post::create ([
-            'title' => 'Judul Keempat',
-            'slug' => 'judul-ke-empat',
-            'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
-            'category_id' => 2,
-            'user_id' => 2
-        ]);
+        // Post::create ([
+        //     'title' => 'Judul Kedua',
+        //     'slug' => 'judul-ke-dua',
+        //     'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
+        //     'category_id' => 1,
+        //     'user_id' => 1
+        // ]);
+
+        // Post::create ([
+        //     'title' => 'Judul Ketiga',
+        //     'slug' => 'judul-ke-tiga',
+        //     'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
+        //     'category_id' => 2,
+        //     'user_id' => 1
+        // ]);
+
+        // Post::create ([
+        //     'title' => 'Judul Keempat',
+        //     'slug' => 'judul-ke-empat',
+        //     'excerpt' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+        //     'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus consectetur obcaecati, reprehenderit aliquam odit cum ipsam ad laborum eligendi. Voluptatum recusandae saepe minima eius corporis at adipisci quia ipsam atque quod nostrum similique tenetur culpa cum nesciunt quidem sapiente molestias nobis reiciendis ut, voluptates corrupti unde, laudantium impedit! Doloremque dicta hic facilis ea sequi. Placeat',
+        //     'category_id' => 2,
+        //     'user_id' => 2
+        // ]);
     }
 }
